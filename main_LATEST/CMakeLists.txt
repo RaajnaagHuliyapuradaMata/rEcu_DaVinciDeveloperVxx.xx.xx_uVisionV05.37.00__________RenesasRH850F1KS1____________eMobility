@@ -27,7 +27,7 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/adc1.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/adc2.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/bdrv.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalMcu/ccu6.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalGpt/ccu6.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/csa.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalGpt/gpt12e.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalLin/lin.cpp
