@@ -21,14 +21,70 @@ add_definitions(
 add_executable(
    Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2022
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_tbd.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA/ProjectARA.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg/Cfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst/Const.cpp
-
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm/ReSimFm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM/ServiceBswM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm/ServiceCanNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm/ServiceCanSm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom/ServiceCom.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM/ServiceComM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm/ServiceCsm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm/ServiceDcm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem/ServiceDem.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet/ServiceDet.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt/ServiceDlt.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM/ServiceEcuM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/Table.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM/ServiceFiM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm/ServiceFrNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM/ServiceIpduM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm/ServiceNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/ServiceNvM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs/ServiceOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR/ServicePduR.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM/ServiceSchM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC/ServiceSecOC.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm/ServiceSokFm.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp/ServiceStartUp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM/ServiceStbM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM/ServiceSwcEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs/ServiceSwcOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms/ServiceVkms.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/ServiceWdgM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf/EcuabCanIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp/EcuabCanTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf/EcuabCryIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabEa/EcuabEa.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabEthIf/EcuabEthIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFee/EcuabFee.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFrIf/EcuabFrIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFrTp/EcuabFrTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabJ1939Tp/EcuabJ1939Tp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabLinIf/EcuabLinIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabLinTp/EcuabLinTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabMemIf/EcuabMemIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabWdgIf/EcuabWdgIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/McalAdc.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalCan/McalCan.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalCry/McalCry.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalDio/McalDio.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalEep/McalEep.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalEth/McalEth.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalFls/McalFls.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalFr/McalFr.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalGpt/McalGpt.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalIcu/McalIcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalLin/McalLin.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalMcu/McalMcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalOcu/McalOcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPort/McalPort.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPwm/McalPwm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalSpi/McalSpi.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg/McalWdg.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/Table.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/mon.cpp
-
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler/Mat.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_CddBdrv/bdrv.cpp
@@ -59,23 +115,64 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CddBdrv"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabMemIf"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalGpt"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalLin"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalMcu"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPort"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabEa"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabEthIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFee"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFrIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabFrTp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabJ1939Tp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabLinIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabLinTp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabMemIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabWdgIf"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalCan"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalCry"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalDio"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalEep"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalEth"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalFls"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalFr"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalGpt"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalIcu"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalLin"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalMcu"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalOcu"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPort"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPwm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalSpi"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg"
 )
 
