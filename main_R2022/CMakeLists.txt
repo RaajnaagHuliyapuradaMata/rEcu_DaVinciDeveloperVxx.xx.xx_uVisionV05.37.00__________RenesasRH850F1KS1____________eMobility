@@ -22,8 +22,10 @@ add_executable(
    Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2022
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_tbd.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA/ProjectARA.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg/Cfg.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler/Mat.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst/Const.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm/ReSimFm.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM/ServiceBswM.cpp
@@ -50,6 +52,7 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp/ServiceStartUp.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM/ServiceStbM.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM/ServiceSwcEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcIoHwAb/ServiceSwcIoHwAb.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs/ServiceSwcOs.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms/ServiceVkms.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/ServiceWdgM.cpp
@@ -85,8 +88,6 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg/McalWdg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/Table.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/mon.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler/Mat.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_CddBdrv/bdrv.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/adc1.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalAdc/adc2.cpp
@@ -141,6 +142,7 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcIoHwAb"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM"
