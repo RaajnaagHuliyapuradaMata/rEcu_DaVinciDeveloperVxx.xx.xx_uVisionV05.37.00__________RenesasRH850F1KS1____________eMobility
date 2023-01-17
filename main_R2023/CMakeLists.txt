@@ -1,0 +1,180 @@
+cmake_minimum_required(VERSION 3.23.2)
+
+project(
+   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023
+   VERSION 0.1
+)
+
+SET(CMAKE_CXX_STANDARD 20)
+SET(CMAKE_CXX_STANDARD_REQUIRED True)
+
+add_definitions(
+   -g
+   -std=c++2a
+   -Wall
+   -Werror
+   -Wextra
+   -pedantic
+   -Wuninitialized
+)
+
+add_executable(
+   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023
+   ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc.cpp
+   ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc_tbd.cpp
+   ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
+   ${PROJECT_SOURCE_DIR}/source/ProjectARA/ProjectARA.cpp
+   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/Cfg.cpp
+   ${PROJECT_SOURCE_DIR}/source/ProjectCompiler/Mat.cpp
+   ${PROJECT_SOURCE_DIR}/source/ProjectConst/Const.cpp
+   ${PROJECT_SOURCE_DIR}/source/ReSimFm/ReSimFm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceBswM/ServiceBswM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceCanNm/ServiceCanNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceCanSm/ServiceCanSm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceCom/ServiceCom.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceComM/ServiceComM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceCsm/ServiceCsm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceDcm/ServiceDcm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceDem/ServiceDem.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceDet/ServiceDet.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceDlt/ServiceDlt.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceEcuM/ServiceEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceFiM/ServiceFiM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceFrNm/ServiceFrNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceIpduM/ServiceIpduM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceNm/ServiceNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceNvM/ServiceNvM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceOs/ServiceOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServicePduR/ServicePduR.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSchM/ServiceSchM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSecOC/ServiceSecOC.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSokFm/ServiceSokFm.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceStartUp/ServiceStartUp.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceStbM/ServiceStbM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSwcEcuM/ServiceSwcEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSwcIoHwAb/ServiceSwcIoHwAb.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceSwcOs/ServiceSwcOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceVkms/ServiceVkms.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceWdgM/ServiceWdgM.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabCanIf/EcuabCanIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabCanTp/EcuabCanTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabCryIf/EcuabCryIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabEa/EcuabEa.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabEthIf/EcuabEthIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabFee/EcuabFee.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabFrIf/EcuabFrIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabFrTp/EcuabFrTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabJ1939Tp/EcuabJ1939Tp.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabLinIf/EcuabLinIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabLinTp/EcuabLinTp.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabMemIf/EcuabMemIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/EcuabWdgIf/EcuabWdgIf.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalAdc/McalAdc.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalCan/McalCan.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalCry/McalCry.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalDio/McalDio.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalEep/McalEep.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalEth/McalEth.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalFls/McalFls.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalFr/McalFr.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalGpt/McalGpt.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalIcu/McalIcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalLin/McalLin.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalMcu/McalMcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalOcu/McalOcu.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalPort/McalPort.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalPwm/McalPwm.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalSpi/McalSpi.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalWdg/McalWdg.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceNvM/Table.cpp
+   ${PROJECT_SOURCE_DIR}/source/ServiceWdgM/mon.cpp
+   ${PROJECT_SOURCE_DIR}/source/CddBdrv/bdrv.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalAdc/adc1.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalAdc/adc2.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalAdc/csa.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalGpt/ccu6.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalGpt/gpt12e.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalGpt/scu.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalLin/lin.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalMcu/int.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalMcu/pmu.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalMcu/sfr_access.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalMcu/tle_device.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalPort/port.cpp
+   ${PROJECT_SOURCE_DIR}/source/McalWdg/wdt1.cpp
+
+#  ${PROJECT_SOURCE_DIR}/source/McalMcu/isr.cpp
+#  ${PROJECT_SOURCE_DIR}/source/ServiceStartUp/bootrom.cpp
+#  ${PROJECT_SOURCE_DIR}/source/ServiceStartUp/system_tle987x.cpp
+)
+
+target_include_directories(
+   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023 PUBLIC
+   "${PROJECT_SOURCE_DIR}/source/common"
+   "${PROJECT_SOURCE_DIR}/source/ApplSwcFoc"
+   "${PROJECT_SOURCE_DIR}/source/ProjectARA"
+   "${PROJECT_SOURCE_DIR}/source/ProjectCfg"
+   "${PROJECT_SOURCE_DIR}/source/ProjectCompiler"
+   "${PROJECT_SOURCE_DIR}/source/ProjectConst"
+   "${PROJECT_SOURCE_DIR}/source/ReSimFm"
+   "${PROJECT_SOURCE_DIR}/source/CddBdrv"
+   "${PROJECT_SOURCE_DIR}/source/ServiceBswM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceCanNm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceCanSm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceCom"
+   "${PROJECT_SOURCE_DIR}/source/ServiceComM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceCsm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceDcm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceDem"
+   "${PROJECT_SOURCE_DIR}/source/ServiceDet"
+   "${PROJECT_SOURCE_DIR}/source/ServiceDlt"
+   "${PROJECT_SOURCE_DIR}/source/ServiceEcuM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceFiM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceFrNm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceIpduM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceNm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceNvM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceOs"
+   "${PROJECT_SOURCE_DIR}/source/ServicePduR"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSchM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSecOC"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSokFm"
+   "${PROJECT_SOURCE_DIR}/source/ServiceStartUp"
+   "${PROJECT_SOURCE_DIR}/source/ServiceStbM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSwcEcuM"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSwcIoHwAb"
+   "${PROJECT_SOURCE_DIR}/source/ServiceSwcOs"
+   "${PROJECT_SOURCE_DIR}/source/ServiceVkms"
+   "${PROJECT_SOURCE_DIR}/source/ServiceWdgM"
+   "${PROJECT_SOURCE_DIR}/source/EcuabCanIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabCanTp"
+   "${PROJECT_SOURCE_DIR}/source/EcuabCryIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabEa"
+   "${PROJECT_SOURCE_DIR}/source/EcuabEthIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabFee"
+   "${PROJECT_SOURCE_DIR}/source/EcuabFrIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabFrTp"
+   "${PROJECT_SOURCE_DIR}/source/EcuabJ1939Tp"
+   "${PROJECT_SOURCE_DIR}/source/EcuabLinIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabLinTp"
+   "${PROJECT_SOURCE_DIR}/source/EcuabMemIf"
+   "${PROJECT_SOURCE_DIR}/source/EcuabWdgIf"
+   "${PROJECT_SOURCE_DIR}/source/McalAdc"
+   "${PROJECT_SOURCE_DIR}/source/McalCan"
+   "${PROJECT_SOURCE_DIR}/source/McalCry"
+   "${PROJECT_SOURCE_DIR}/source/McalDio"
+   "${PROJECT_SOURCE_DIR}/source/McalEep"
+   "${PROJECT_SOURCE_DIR}/source/McalEth"
+   "${PROJECT_SOURCE_DIR}/source/McalFls"
+   "${PROJECT_SOURCE_DIR}/source/McalFr"
+   "${PROJECT_SOURCE_DIR}/source/McalGpt"
+   "${PROJECT_SOURCE_DIR}/source/McalIcu"
+   "${PROJECT_SOURCE_DIR}/source/McalLin"
+   "${PROJECT_SOURCE_DIR}/source/McalMcu"
+   "${PROJECT_SOURCE_DIR}/source/McalOcu"
+   "${PROJECT_SOURCE_DIR}/source/McalPort"
+   "${PROJECT_SOURCE_DIR}/source/McalPwm"
+   "${PROJECT_SOURCE_DIR}/source/McalSpi"
+   "${PROJECT_SOURCE_DIR}/source/McalWdg"
+)
+
