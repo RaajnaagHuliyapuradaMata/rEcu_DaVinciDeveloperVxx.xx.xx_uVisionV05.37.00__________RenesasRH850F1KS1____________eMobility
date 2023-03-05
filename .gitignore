@@ -11,4 +11,7 @@ CTestTestfile.cmake
 _deps
 lib*
 m_*
+.cproject
+.project
+.settings
 

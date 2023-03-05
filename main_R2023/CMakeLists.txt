@@ -20,14 +20,13 @@ add_definitions(
 
 add_executable(
    Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023
+   ${PROJECT_SOURCE_DIR}/source/ReSimCmd/ReSimCmd.cpp
+   ${PROJECT_SOURCE_DIR}/source/ReSimFm/ReSimFm.cpp
    ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc.cpp
    ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc_tbd.cpp
    ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
    ${PROJECT_SOURCE_DIR}/source/ProjectARA/ProjectARA.cpp
-   ${PROJECT_SOURCE_DIR}/source/ProjectCfg/Cfg.cpp
    ${PROJECT_SOURCE_DIR}/source/ProjectCompiler/Mat.cpp
-   ${PROJECT_SOURCE_DIR}/source/ProjectConst/Const.cpp
-   ${PROJECT_SOURCE_DIR}/source/ReSimFm/ReSimFm.cpp
    ${PROJECT_SOURCE_DIR}/source/ServiceBswM/ServiceBswM.cpp
    ${PROJECT_SOURCE_DIR}/source/ServiceCanNm/ServiceCanNm.cpp
    ${PROJECT_SOURCE_DIR}/source/ServiceCanSm/ServiceCanSm.cpp
@@ -110,13 +109,13 @@ add_executable(
 
 target_include_directories(
    Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023 PUBLIC
+   "${PROJECT_SOURCE_DIR}/source/ReSimCmd"
+   "${PROJECT_SOURCE_DIR}/source/ReSimFm"
    "${PROJECT_SOURCE_DIR}/source/common"
    "${PROJECT_SOURCE_DIR}/source/ApplSwcFoc"
    "${PROJECT_SOURCE_DIR}/source/ProjectARA"
    "${PROJECT_SOURCE_DIR}/source/ProjectCfg"
    "${PROJECT_SOURCE_DIR}/source/ProjectCompiler"
-   "${PROJECT_SOURCE_DIR}/source/ProjectConst"
-   "${PROJECT_SOURCE_DIR}/source/ReSimFm"
    "${PROJECT_SOURCE_DIR}/source/CddBdrv"
    "${PROJECT_SOURCE_DIR}/source/ServiceBswM"
    "${PROJECT_SOURCE_DIR}/source/ServiceCanNm"
