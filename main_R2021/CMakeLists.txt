@@ -19,7 +19,7 @@ add_definitions(
 )
 
 add_executable(
-   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2021
+   ${PROJECT_NAME}
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc_Pbcfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_common/Mat.cpp
@@ -48,7 +48,7 @@ add_executable(
 )
 
 target_include_directories(
-   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2021 PUBLIC
+   ${PROJECT_NAME} PUBLIC
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_common"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA"

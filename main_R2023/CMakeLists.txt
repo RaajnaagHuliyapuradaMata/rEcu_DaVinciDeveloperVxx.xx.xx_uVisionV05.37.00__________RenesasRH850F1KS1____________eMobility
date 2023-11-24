@@ -19,7 +19,7 @@ add_definitions(
 )
 
 add_executable(
-   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023
+   ${PROJECT_NAME}
    ${PROJECT_SOURCE_DIR}/source/ReSimCmd/ReSimCmd.cpp
    ${PROJECT_SOURCE_DIR}/source/ReSimFm/ReSimFm.cpp
    ${PROJECT_SOURCE_DIR}/source/ApplSwcFoc/ApplSwcFoc.cpp
@@ -108,7 +108,7 @@ add_executable(
 )
 
 target_include_directories(
-   Windows_uVisionV5p37_BldcFocSensorlessTLE9879QXA40_R2023 PUBLIC
+   ${PROJECT_NAME} PUBLIC
    "${PROJECT_SOURCE_DIR}/source/ReSimCmd"
    "${PROJECT_SOURCE_DIR}/source/ReSimFm"
    "${PROJECT_SOURCE_DIR}/source/common"
